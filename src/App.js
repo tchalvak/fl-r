@@ -6,12 +6,12 @@ import Mockup from './components/Mockup/Mockup'
 
 function App() {
     return (
-	<>
-		<CssBaseline />
-        <div className="App">
-            <Mockup />
-        </div>
-    </>
+        <>
+            <CssBaseline />
+            <div className="App">
+                <Mockup />
+            </div>
+        </>
     )
 }
 
