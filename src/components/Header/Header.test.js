@@ -9,7 +9,7 @@ describe('<Header />', () => {
         const div = document.createElement('div')
         ReactDOM.render(
             <ThemeProvider theme={theme}>
-                <Header />
+                <Header>With some Children</Header>
             </ThemeProvider>,
             div
         )
