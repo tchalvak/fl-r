@@ -21,8 +21,8 @@ const videoSrc =
 
 
 
-const ThemeDecorator = storyFn => <><CssBaseline /><ThemeProvider theme={theme}>{storyFn()}</ThemeProvider></>;
-addDecorator(ThemeDecorator);
+const ThemeDecorator = storyFn => <><CssBaseline /><ThemeProvider theme={theme}>{storyFn()}</ThemeProvider></>
+addDecorator(ThemeDecorator)
 
 storiesOf('Header', module).add('with lorem text', () => (
     <Header>
