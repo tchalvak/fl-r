@@ -49,7 +49,7 @@ const Mockup = ({ classes, className, ...rest }) => {
     return (
         <div className={cx(className, styles.mockup)} {...rest}>
             <Header>
-                <Typography variant="h4">Falling Leaves</Typography>
+                <Typography variant="h4">Falling Rocks</Typography>
                 <Typography variant="subtitle1">
                     This is a free application landing page for your business
                 </Typography>
