@@ -1,5 +1,5 @@
 import React from 'react'
-//import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import cx from 'classnames'
 import Typography from '@material-ui/core/Typography'
 
@@ -9,10 +9,21 @@ import FButton from '../FButton/FButton'
 export const FSection = ({ children, title })=>(
     <div className={fstyles.sec}>
         <Typography variant='h4'>
+            {title}
+        </Typography>
+        <Typography variant='body1'>
             {children}
         </Typography>
     </div>
 )
+
+FSection.propTypes = {
+    children: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.node),
+        PropTypes.node
+    ]).isRequired,
+    title: PropTypes.string,
+}
 
 const Footer = ({ children, className, ...rest })=> {
     return (
@@ -37,6 +48,15 @@ const Footer = ({ children, className, ...rest })=> {
             </div>
         </footer>
     )
+}
+
+Footer.propTypes = {
+    className: PropTypes.string,
+    children: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.node),
+        PropTypes.node
+    ]).isRequired,
+    title: PropTypes.string,
 }
 
 export default Footer

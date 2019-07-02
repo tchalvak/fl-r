@@ -19,9 +19,12 @@ import Button from '../components/FButton/FButton'
 const videoSrc =
     'https://player.vimeo.com/external/332900401.hd.mp4?s=7d6caf73dcd400bdc28cea3ac5aaef5caeca4ae1&profile_id=175'
 
-
-
-const ThemeDecorator = storyFn => <><CssBaseline /><ThemeProvider theme={theme}>{storyFn()}</ThemeProvider></>
+const ThemeDecorator = storyFn => (
+    <>
+        <CssBaseline />
+        <ThemeProvider theme={theme}>{storyFn()}</ThemeProvider>
+    </>
+)
 addDecorator(ThemeDecorator)
 
 storiesOf('Header', module).add('with lorem text', () => (

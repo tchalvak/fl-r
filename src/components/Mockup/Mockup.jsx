@@ -4,9 +4,9 @@ import PropTypes from 'prop-types'
 import cx from 'classnames'
 import styles from './mockup.module.css'
 
-import Video from '../Video/Video'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
+import Typography from '@material-ui/core/Typography'
 
 // eslint-disable-next-line react/prop-types
 const Core = ({ children, className, ...rest }) => {
@@ -49,7 +49,10 @@ const Mockup = ({ classes, className, ...rest }) => {
     return (
         <div className={cx(className, styles.mockup)} {...rest}>
             <Header>
-                <Video controls="controls" controlsList="nodownload" poster="poster" src={"https://player.vimeo.com/external/332900401.hd.mp4?s=7d6caf73dcd400bdc28cea3ac5aaef5caeca4ae1&profile_id=175"} type="video/mp4"/>
+                <Typography variant="h4">Falling Leaves</Typography>
+                <Typography variant="subtitle1">
+                    This is a free application landing page for your business
+                </Typography>
             </Header>
             <Core>
                 <Main>

@@ -16,9 +16,10 @@ const Header = ({ children, className, ...rest })=> {
     }
     return (
         <header className={cx(className, hstyles['p-header'])} style={oStyle} {...rest}>
+            <span className={hstyles['leaf-box']}></span>
             <Logo />
             {children}
-            <FButton>Download now</FButton> <FButton>Buy license</FButton>
+            <FButton color='primary'>Download now</FButton> <FButton color='secondary'>Buy license</FButton>
             <Video controls="controls" controlsList="nodownload" poster="poster" src={"https://player.vimeo.com/external/332900401.hd.mp4?s=7d6caf73dcd400bdc28cea3ac5aaef5caeca4ae1&profile_id=175"} type="video/mp4"/>
         </header>
     )

@@ -18,12 +18,14 @@ const Video = ({ src, type, cprops, className, ...rest }) => {
                 <Icon icon={faPlay}/>{' '}Watch the video
             </FButton>
             <div className={vstyles.varea} hidden={hidden}>
-                <video className={className} {...rest}>
-                    <source src={src} type={type} />
-                    Sorry, your browser doesn&apos;t support this embedded video,
-                    <a href={src}>download</a> or watch it <a href={src}>here</a>.
-                    <track kind="captions" {...cprops} />
-                </video>
+                <div className={vstyles.spaced}>
+                    <video className={className} {...rest}>
+                        <source src={src} type={type} />
+                        Sorry, your browser doesn&apos;t support this embedded video,
+                        <a href={src}>download</a> or watch it <a href={src}>here</a>.
+                        <track kind="captions" {...cprops} />
+                    </video>
+                </div>
             </div>
         </div>
     )
@@ -33,6 +35,7 @@ Video.propTypes = {
     src: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
     cprops: PropTypes.shape({}),
+    className: PropTypes.string,
 }
 
 Video.defaultProps = {

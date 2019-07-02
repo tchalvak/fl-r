@@ -8,7 +8,7 @@ import theme from './ui/theme/index.js'
 
 const overrideTheme = {
     background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-    ...theme
+    ...theme,
 }
 
 function App() {

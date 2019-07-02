@@ -2,23 +2,19 @@
     font-family: Leto, sans-serif;
 }
 .f-upper{
-    width: 1600px;
     height: 120px;
     background-image: linear-gradient(270deg, #f5f7fd 0%, #e8edfa 100%);
     text-align:center;
 }
 .f-middle{
-    width: 1600px;
     height: 362px;
     background-image: url('../../images/bg/footer-wave.png');
 }
 .f-lower{
-    width: 1600px;
     height: 71px;
     background-color: #14152d;
 }
 .f-lower-links{
-    width: 216px;
     height: 16px;
     color: #7c93ad;
     font-size: 12px;

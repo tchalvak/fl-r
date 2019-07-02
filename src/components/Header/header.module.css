@@ -4,3 +4,13 @@
     background-image: url('../../images/bg/dark-purple-wave.png');
     color: #ffffff;
 }
+
+.leaf-box{
+    position:absolute;
+    top: -2rem;
+    left: -2rem;
+    width: 8rem;
+    height: 8rem;
+    background-image: url('../../images/leaf-ridged.png');
+    background-repeat: no-repeat;
+}
