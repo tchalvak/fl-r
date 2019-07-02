@@ -1,0 +1,12 @@
+.video-player{
+    color: white;
+    position:relative;
+}
+.varea{
+    position:absolute;
+    top: 3rem;
+}
+.play-button{
+    white-space:nowrap;
+    color: white;
+}

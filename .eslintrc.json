@@ -56,7 +56,7 @@
             }
         ],
         "semi": ["warn", "never"],
-        "space-before-blocks": ["warn", "never"],
+        "space-before-blocks": ["off", "never"],
         "space-before-function-paren": ["warn", "never"],
         "space-in-parens": ["error", "never"],
         "space-infix-ops": ["warn"],
