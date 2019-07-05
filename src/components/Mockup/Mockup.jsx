@@ -4,8 +4,9 @@ import PropTypes from 'prop-types'
 import cx from 'classnames'
 import styles from './mockup.module.css'
 
-import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
+import Article from '../Article/Article'
 import Typography from '@material-ui/core/Typography'
 
 // eslint-disable-next-line react/prop-types
@@ -27,18 +28,6 @@ const Main = ({ children, ...rest }) => {
     )
 }
 
-// eslint-disable-next-line react/prop-types
-const Article = ({ children, title, datetime, ...rest }) => {
-    return (
-        <article {...rest}>
-            <header>
-                {title}
-                <time className='published' dateTime={(datetime.toString())}>{datetime.toString()}</time>
-            </header>
-            {children}
-        </article>
-    )
-}
 
 
 /**
@@ -56,7 +45,7 @@ const Mockup = ({ classes, className, ...rest }) => {
             </Header>
             <Core>
                 <Main>
-                    <Article title='Some article title' datetime={new Date()}>
+                    <Article title='Get some leaves and go to town' datetime={new Date()}>
                         Article Content
                     </Article>
                 </Main>

@@ -1,0 +1,20 @@
+.article{
+    margin: 1.7rem 0.7rem;
+    padding: 1rem;
+}
+
+.article header{
+    background-color: #222;
+    color:#777777;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.article header h1{
+    border-bottom: thin solid rgb(95, 95, 5);
+    color:#fff;
+}
+
+.article header time{
+    margin-bottom: -1rem;
+}
