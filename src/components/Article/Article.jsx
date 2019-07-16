@@ -16,7 +16,9 @@ const Article = ({ children, title, datetime, className, ...rest }) => {
                     {datetime.toDateString()}
                 </time>
             </header>
-            {children}
+            <div className={styles['the-content']}>
+                {children}
+            </div>
         </article>
     )
 }

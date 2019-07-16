@@ -6,15 +6,21 @@
 .article header{
     background-color: #222;
     color:#777777;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
     margin-bottom: 2rem;
+    text-align:center;
 }
 
 .article header h1{
     border-bottom: thin solid rgb(95, 95, 5);
     color:#fff;
+    text-transform: uppercase;
 }
 
 .article header time{
     margin-bottom: -1rem;
+}
+
+.the-content{
+    text-align: left;
 }
